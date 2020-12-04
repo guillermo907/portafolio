@@ -13,7 +13,7 @@ const Proyectos = () =>{
 
     return(
         <ProyectosContainer>
-            Proyects homs
+            Algunos proyectos
         </ProyectosContainer>
     );
 }
