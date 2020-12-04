@@ -18,7 +18,7 @@ const NavContainer = styled.div`
         justify-content: space-arround;
         align-items: center;
         background-color: #3461c1;
-        min-width: 245px;
+        min-width: 215px;
         min-height: 100% !important;
         z-index: 10;
         padding: 10px;
@@ -48,11 +48,10 @@ const Navigation = () =>{
             <ToggleSwitch onClick={() => setMenuToggle(!menuToggle)}>Toggle</ToggleSwitch>
             <animated.div style={menuAnimation} className="dropdown">
                 {/* <Dropdown > */}
-                    <a href="#">Home</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">{menuToggle === true ? "toggle on" : "toggle off"}</a>
+                    <h1><a href="#">Home</a></h1>
+                    <h2><a href="#">Nosotros</a></h2>
+                    <h2><a href="#">Contacto</a></h2>
+                    <h2><a href="#">Servicios</a></h2>
                 {/* </Dropdown> */}
             </animated.div>
         </NavContainer>

@@ -8,6 +8,7 @@ const InfobarContainer = styled.div`
     min-height: 40vh;
     background-color: var(--blue-dark-color);
     color: white;
+    border-radius: 0 0 150px 150px;
 `;
 
 const Infobar = () => {

@@ -3,6 +3,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 import Banner from './Banner';
 import Navigation from './Navigation';
 import Infobar from './Infobar';
+import Proyectos from './Proyectos';
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -34,6 +35,7 @@ const App = () =>{
             <Navigation />
             <Banner />
             <Infobar />
+            <Proyectos />
         </Container>
     );
 }
