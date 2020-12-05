@@ -34,6 +34,7 @@ const NavContainer = styled.div`
 const ToggleSwitch = styled.a`
     z-index: 999;
     padding: 8px;
+    color: var(--pink-color);
 `;
 
 const Navigation = () =>{
@@ -45,7 +46,11 @@ const Navigation = () =>{
 
     return(
         <NavContainer>
-            <ToggleSwitch onClick={() => setMenuToggle(!menuToggle)}>Menu</ToggleSwitch>
+            <ToggleSwitch onClick={() => setMenuToggle(!menuToggle)}>
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+            </ToggleSwitch>
             <animated.div style={menuAnimation} className="dropdown" onMouseLeave={ ()=> setMenuToggle(!menuToggle) } >
                 {/* <Dropdown > */}
                     <h1><a href="#">Home</a></h1>
