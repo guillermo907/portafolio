@@ -5,6 +5,7 @@ import Navigation from './Navigation';
 import Infobar from './Infobar';
 import Proyectos from './Proyectos';
 import Contacto from './Contacto';
+import Footer from './Footer';
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -24,6 +25,7 @@ const Container = styled.div`
     // background: url('https://images.unsplash.com/photo-1504681869696-d977211a5f4c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1762&q=80') no-repeat
     // center center/cover;
     background-color: #3461c1;
+    color: white;
     min-height: 98vh;
     font-family: 'Poiret One', cursive;
 `;
@@ -38,6 +40,7 @@ const App = () =>{
             <Infobar />
             <Proyectos />
             <Contacto />
+            <Footer />
         </Container>
     );
 }

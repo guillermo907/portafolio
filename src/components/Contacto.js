@@ -8,14 +8,14 @@ const ContactoContainer = styled.div`
     justify-content: center;
     min-height: 60vh;
     width: 100%;
-    border-radius:  130px 130px 0 0;
+    border-radius:  200px 20px 0 0;
     
 `;
 
 const Contacto = () =>{
 
     return (
-        <ContactoContainer>
+        <ContactoContainer id="contacto">
             Contact
         </ContactoContainer>
     );

@@ -45,12 +45,12 @@ const Navigation = () =>{
 
     return(
         <NavContainer>
-            <ToggleSwitch onClick={() => setMenuToggle(!menuToggle)}>Toggle</ToggleSwitch>
+            <ToggleSwitch onClick={() => setMenuToggle(!menuToggle)}>Menu</ToggleSwitch>
             <animated.div style={menuAnimation} className="dropdown" onMouseLeave={ ()=> setMenuToggle(!menuToggle) } >
                 {/* <Dropdown > */}
                     <h1><a href="#">Home</a></h1>
                     <h2><a href="#">Nosotros</a></h2>
-                    <h2><a href="#">Contacto</a></h2>
+                    <h2><a href="#contacto">Contacto</a></h2>
                     <h2><a href="#infobar">Servicios</a></h2>
                 {/* </Dropdown> */}
             </animated.div>

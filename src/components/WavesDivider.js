@@ -92,13 +92,13 @@ const WavesDivider = () => {
                 v44h-352z" />
                 </defs>
                 <g class="parallax1">
-                <use xlinkHref="#gentle-wave" x="50" y="3" fill="#f461c1"/> //Top color
+                <use xlinkHref="#gentle-wave" x="50" y="3" fill="var(--pink-color)"/> //pink
                 </g>
                 <g class="parallax2">
-                <use xlinkHref="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+                <use xlinkHref="#gentle-wave" x="50" y="0" fill="#4579e2"/> //blue
                 </g>
                     <g class="parallax3">
-                <use xlinkHref="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+                <use xlinkHref="#gentle-wave" x="50" y="9" fill="#3461c1"/> //blue
                 </g>
                 <g class="parallax4">
                 <use xlinkHref="#gentle-wave" x="50" y="6" fill="var(--blue-dark-color)"/>  //Bottom color 
