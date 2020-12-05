@@ -6,7 +6,7 @@ const ProyectosContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: var(--blue-color);
-    min-height: 50vh;
+    min-height: 70vh;
 `;
 
 const Proyectos = () =>{

@@ -46,7 +46,7 @@ const Navigation = () =>{
     return(
         <NavContainer>
             <ToggleSwitch onClick={() => setMenuToggle(!menuToggle)}>Toggle</ToggleSwitch>
-            <animated.div style={menuAnimation} className="dropdown">
+            <animated.div style={menuAnimation} className="dropdown" onMouseLeave={ ()=> setMenuToggle(!menuToggle) } >
                 {/* <Dropdown > */}
                     <h1><a href="#">Home</a></h1>
                     <h2><a href="#">Nosotros</a></h2>

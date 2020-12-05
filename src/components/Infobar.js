@@ -6,13 +6,14 @@ const InfobarContainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-arround;
-    min-height: 40vh;
+    min-height: 80vh;
     background-color: var(--blue-dark-color);
     color: white;
-    border-radius: 0 0 80px 80px;
+    border-radius: 0 0 130px 130px;
 
     div{
-        padding: 25px;
+        padding: 50px;
+        margin: 20px;
     }
 `;
 

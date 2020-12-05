@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Navigation from './Navigation';
 import Infobar from './Infobar';
 import Proyectos from './Proyectos';
+import Contacto from './Contacto';
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -36,6 +37,7 @@ const App = () =>{
             <Banner />
             <Infobar />
             <Proyectos />
+            <Contacto />
         </Container>
     );
 }
