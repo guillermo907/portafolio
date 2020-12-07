@@ -6,15 +6,15 @@ import ecideasImage from '../ecideas.png';
 import famImage from '../famdefe2.png';
 
 const ProyectosContainer = styled.div`
-padding: 30px;
+    padding: 30px;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--blue-dark-color);
     
-    margin: 10px;
-    border-radius:  200px 20px 20px 20px;
+    margin-left: 5px;
+    border-radius:  160px 20px 20px 20px;
     min-height: 70vh;
 
     .projects{
@@ -29,8 +29,8 @@ padding: 30px;
     }
 
     img {
-        max-width: 360px;
-        max-height: 228px;
+        max-width: 288px;
+        max-height: 183px;
         border-radius: 10px;
         margin: 10px;
         &:hover{
@@ -44,19 +44,19 @@ const Proyectos = () =>{
 
     return(
         <ProyectosContainer>
-            Algunos proyectos
+            <h1>Algunos proyectos</h1>
             <div style = {{maxWidth: "100%"}}>
                 <div class="projects">
                     <div>
-                        <h1>Confianza Solidaria</h1>
+                        <h2>Confianza Solidaria</h2>
                         <img src={csgImage}/>
                     </div>
                     <div>
-                        <h1>ECIDEAS</h1>
+                        <h2>ECIDEAS</h2>
                         <img src={ecideasImage}/>
                     </div>
                     <div>
-                        <h1>Familias de Fe</h1>
+                        <h2>Familias de Fe</h2>
                         <img src={famImage}/>
                     </div>
                     
