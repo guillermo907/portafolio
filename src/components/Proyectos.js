@@ -11,7 +11,10 @@ padding: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue-color);
+    background-color: var(--blue-dark-color);
+    
+    margin: 10px;
+    border-radius:  200px 20px 20px 20px;
     min-height: 70vh;
 
     .projects{
@@ -21,6 +24,7 @@ padding: 30px;
         justify-content: space-evenly;
         div{
             margin: 20px;
+            padding: 10px;
         }
     }
 
@@ -28,6 +32,7 @@ padding: 30px;
         max-width: 360px;
         max-height: 228px;
         border-radius: 10px;
+        margin: 10px;
         &:hover{
             filter: invert(90%);
             cursor: pointer;
@@ -62,3 +67,4 @@ const Proyectos = () =>{
 }
 
 export default Proyectos;
+

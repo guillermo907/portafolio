@@ -6,8 +6,8 @@ const FooterContainer = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 12vh;
-    background-color: white;
-    color: var(--blue-color);
+    background-color: var(--pink-color);
+    color: white;
 `;
 
 const Footer = () => {

@@ -9,8 +9,9 @@ const BannerCont = styled.div`
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.914);
-    color: #3461c1;
-    color: var(--blue-color);
+    background: linear-gradient(to right, #fc5c7d, #6a82fb); 
+    background: linear-gradient(to left, var(--blue-color2), var(--pink-color)); 
+    color: white;
     min-height: 80vh;
 
     h1{

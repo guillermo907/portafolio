@@ -38,8 +38,8 @@ const App = () =>{
             <Navigation />
             <Banner />
             <Infobar />
-            <Proyectos />
             <Contacto />
+            <Proyectos />
             <Footer />
         </Container>
     );

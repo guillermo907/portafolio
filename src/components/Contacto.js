@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ContactoContainer = styled.div`
     display: flex;
-    background-color: var(--pink-color);
+    background-color: var(--blue-color);
     align-items: center;
     justify-content: center;
     min-height: 60vh;
