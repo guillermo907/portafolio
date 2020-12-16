@@ -6,6 +6,8 @@ import Infobar from './Infobar';
 import Proyectos from './Proyectos';
 import Contacto from './Contacto';
 import Footer from './Footer';
+import News from './News';
+import Navigation2 from './Navigation2';
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -19,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     --blue-color: #3461c1;
     --blue-color2: #4579e2;
     --blue-dark-color: rgba(34, 50, 87, 0.976);
+    --white-trans-color: rgba(255, 255, 255, 0.743); 
   }
 `;
 const Container = styled.div`
@@ -36,10 +39,12 @@ const App = () =>{
         <Container>
             <GlobalStyle />
             <Navigation />
+            <Navigation2 />
             <Banner />
             <Infobar />
             <Contacto />
             <Proyectos />
+            <News />
             <Footer />
         </Container>
     );

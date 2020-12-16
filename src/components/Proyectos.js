@@ -46,7 +46,7 @@ const Proyectos = () =>{
         <ProyectosContainer>
             <h1>Algunos proyectos</h1>
             <div style = {{maxWidth: "100%"}}>
-                <div class="projects">
+                <div class="projects" style={{display: "none"}}>
                     <div>
                         <h2>Confianza Solidaria</h2>
                         <img src={csgImage}/>

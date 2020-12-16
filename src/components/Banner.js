@@ -15,7 +15,7 @@ const BannerCont = styled.div`
     min-height: 80vh;
 
     h1{
-        font-size: 90px;
+        font-size: 80px;
         padding-left: 10px;
     }
 `;
