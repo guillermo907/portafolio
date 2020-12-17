@@ -48,18 +48,18 @@ const Infobar = () => {
     return (
         <InfobarContainer id="infobar">
             <div className="infoRow">
-                <motion.div whileHover={{scale: 1.2}}>
-                    <img style={{width: '45%'}} src={timely}/>
+                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.9 }}>
+                    <img style={{width: '90%'}} src={timely}/>
                     <h3>Agil </h3>
                     <p>Desarrollo agil y confiable</p>
                 </motion.div>
-                <motion.div whileHover={{y: 20}}>
-                    <img style={{width: '55%'}} src={thumbUp}/>
+                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.9 }}>
+                    <img style={{width: '100%'}} src={thumbUp}/>
                     <h3>Reponsivo</h3>
                     <p>Adaptable a cualquier tipo <br/> de dispositivo</p>
                 </motion.div>
-                <motion.div whileHover={{y: 20, scale: 1.2}}>
-                    <img style={{width: '45%'}} src={thumbUp2}/>
+                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.9 }}>
+                    <img style={{width: '100%'}} src={thumbUp2}/>
                     <h3>Dinamico</h3>
                     <p>Diseños dinamicos</p>
                 </motion.div>

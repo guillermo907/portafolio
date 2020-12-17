@@ -9,8 +9,10 @@ const NewsContainer = styled.div`
     align-items: center;
     background-color: var(--blue-color2);
     min-height: 40vh;
+    max-width: 100%;
     padding: 10px;
     border-radius: 20px 20px 0 0;
+    overflow: scroll;
 
     .historias{
         background-color: rgba(34, 50, 87, 0.376);
@@ -28,7 +30,7 @@ const Button = styled.button`
         background-color: var(--blue-dark-color);
         color: white;
         border-radius: 10px;
-        padding: 5px 20px;
+        padding: 8px 13px;
         border-style: none;
         
         &:hover{
@@ -57,7 +59,7 @@ const News = () =>{
             return news.map((newsStory)=>{
                 return (
                     <div  class="historias">
-                        <motion.h2 animate= {{ fontSize: '50px', color: '#ff2994', x: 50, y: -10 }} 
+                        <motion.h2 animate= {{ fontSize: '30px', color: '#ff2994', y: -10 }} 
                         transition={{ duration: 0.8 }}>
                             {newsStory.author}</motion.h2>
                         <p>{newsStory.description}</p>
