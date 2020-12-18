@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import NewsCard from './NewsCard';
 
 const NewsContainer = styled.div`
     display: flex;
@@ -26,25 +27,11 @@ const NewsContainer = styled.div`
 
 `;
 
-const Button = styled.button`
-        background-color: var(--blue-dark-color);
-        color: white;
-        border-radius: 10px;
-        padding: 8px 13px;
-        border-style: none;
-        
-        &:hover{
-            background-color: var(--pink-color);
-        }
-        &:active , &:focus{
-            background-color: black;
-            outline: none;
-            box-shadow: 1px 2px rgba(255, 255, 255, 0.137);
-        }
-`;
+
 
 const News = () =>{
     const [news, setNews] = useState([]);
+    const [historyToggle, setHistoryToggle] = useState(false);
     console.log(news);
 
     useEffect( ()=> getNews2(), [] );
@@ -58,13 +45,13 @@ const News = () =>{
         if (news.length > 1){
             return news.map((newsStory)=>{
                 return (
-                    <div  class="historias">
-                        <motion.h2 animate= {{ fontSize: '30px', color: '#ff2994', y: -10 }} 
-                        transition={{ duration: 0.8 }}>
-                            {newsStory.author}</motion.h2>
-                        <p>{newsStory.description}</p>
-                        <Button>Mas</Button>
-                    </div>
+                    <NewsCard class="historias"
+                    title={newsStory.title}
+                    author={newsStory.author} 
+                    description={newsStory.description}
+                    content={newsStory.content}
+                    image={newsStory.urlToImage}
+                    />
                 );
             })
         }else{
