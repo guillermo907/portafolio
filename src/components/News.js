@@ -37,7 +37,7 @@ const News = () =>{
     useEffect( ()=> getNews2(), [] );
 
     const getNews2 = async () =>{
-        const response = await axios.get('http://newsapi.org/v2/top-headlines?country=mx&apiKey=f7d83460fc5c4ed59faa6f302eb45a2a');
+        const response = await axios.get('https://newsapi.org/v2/top-headlines?country=mx&apiKey=f7d83460fc5c4ed59faa6f302eb45a2a');
         setNews(response.data.articles);
     }
 
