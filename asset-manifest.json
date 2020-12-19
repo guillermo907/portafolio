@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "./static/js/main.cafb3e21.chunk.js",
-    "main.js.map": "./static/js/main.cafb3e21.chunk.js.map",
+    "main.js": "./static/js/main.23ffc14e.chunk.js",
+    "main.js.map": "./static/js/main.23ffc14e.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.da91c18a.js",
     "runtime-main.js.map": "./static/js/runtime-main.da91c18a.js.map",
-    "static/js/2.d1420125.chunk.js": "./static/js/2.d1420125.chunk.js",
-    "static/js/2.d1420125.chunk.js.map": "./static/js/2.d1420125.chunk.js.map",
+    "static/js/2.6c2cdc7e.chunk.js": "./static/js/2.6c2cdc7e.chunk.js",
+    "static/js/2.6c2cdc7e.chunk.js.map": "./static/js/2.6c2cdc7e.chunk.js.map",
     "index.html": "./index.html",
-    "static/js/2.d1420125.chunk.js.LICENSE.txt": "./static/js/2.d1420125.chunk.js.LICENSE.txt",
+    "static/js/2.6c2cdc7e.chunk.js.LICENSE.txt": "./static/js/2.6c2cdc7e.chunk.js.LICENSE.txt",
     "static/media/csg.4d9c26d0.png": "./static/media/csg.4d9c26d0.png",
     "static/media/ecideas.458ceacf.png": "./static/media/ecideas.458ceacf.png",
     "static/media/famdefe2.f98ce4bf.png": "./static/media/famdefe2.f98ce4bf.png",
@@ -17,7 +17,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.da91c18a.js",
-    "static/js/2.d1420125.chunk.js",
-    "static/js/main.cafb3e21.chunk.js"
+    "static/js/2.6c2cdc7e.chunk.js",
+    "static/js/main.23ffc14e.chunk.js"
   ]
 }
