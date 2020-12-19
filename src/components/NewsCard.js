@@ -5,7 +5,7 @@ import {motion} from 'framer-motion';
 const NewsCardContainer = styled(motion.div)`
     background-color: var(--blue-dark-color);
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 
     &:nth-child(odd){
@@ -42,12 +42,13 @@ const NewsCard = (props) =>{
     const [readToggle, setReadToggle] = useState(false);
 
     return (
-        <NewsCardContainer animate={{ scale: readToggle ?  1.05 : 1 }} transition={{ duration: 0.5 }}>
-            <h1>{props.title}</h1>
+        <NewsCardContainer animate={{ scale: readToggle ?  1.02 : 1 }} transition={{ duration: 0.5 }}>
+            <h3>{props.title}</h3>
             <h2>{props.author}</h2>
-            <img src={props.image} style={{ width: "30%", borderRadius: "10px"}} />
-            <motion.p animate={{ y: readToggle ?  0 : -100 , opacity: readToggle ?  1 : 0 , minHeight: readToggle ? "auto" : "0vh"} } >
-                {props.content}
+            <img src={props.image} style={{ width: "20%", borderRadius: "10px"}} />  
+            <motion.p animate={{ y: readToggle ?  0 : -100 , opacity: readToggle ?  1 : 0 , height: readToggle ? "auto" : "0vh"} } >       
+                {props.date} <br/> <br/>
+                {props.description}
             </motion.p>
             <Button onClick={()=> setReadToggle(!readToggle)}>Leer</Button>
         </NewsCardContainer>

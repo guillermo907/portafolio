@@ -34,23 +34,31 @@ const News = () =>{
     const [historyToggle, setHistoryToggle] = useState(false);
     console.log(news);
 
-    useEffect( ()=> getNews2(), [] );
+    useEffect( ()=> getNews(), [] );
 
     const getNews2 = async () =>{
         const response = await axios.get('https://newsapi.org/v2/top-headlines?country=mx&apiKey=f7d83460fc5c4ed59faa6f302eb45a2a');
         setNews(response.data.articles);
     }
 
+    const getNews = async () =>{
+        const response = await axios.get('http://api.mediastack.com/v1/news?access_key=3dad9be18b5a2a8e92f122282c51f188');
+        setNews(response.data.data);
+    }
+
     const renderNews = () =>{
         if (news.length > 1){
             return news.map((newsStory)=>{
+                if (!newsStory.image) { return }; 
                 return (
                     <NewsCard class="historias"
                     title={newsStory.title}
                     author={newsStory.author} 
                     description={newsStory.description}
                     content={newsStory.content}
-                    image={newsStory.urlToImage}
+                    image={newsStory.image}
+                    date={newsStory.published_at}
+                    key={newsStory.published_at}
                     />
                 );
             })
@@ -65,5 +73,7 @@ const News = () =>{
         </NewsContainer>
     );
 }
+
+//3dad9be18b5a2a8e92f122282c51f188
 
 export default News;
