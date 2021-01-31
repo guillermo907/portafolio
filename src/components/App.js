@@ -15,6 +15,9 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     background-color: white;
   }
+  html{
+    scroll-behavior: smooth !important;
+  }
   :root {
     --main-bg-color: red;
     --pink-color: rgba(244, 97, 193, 0.999);

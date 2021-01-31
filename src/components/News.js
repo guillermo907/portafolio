@@ -24,26 +24,24 @@ const NewsContainer = styled.div`
     .historias:nth-child(odd){
         background-color: rgba(255, 255, 255, 0.137); 
     }
-
 `;
-
-
 
 const News = () =>{
     const [news, setNews] = useState([]);
     const [historyToggle, setHistoryToggle] = useState(false);
-    console.log(news);
 
     useEffect( ()=> getNews(), [] );
 
     const getNews2 = async () =>{
         const response = await axios.get('https://newsapi.org/v2/top-headlines?country=mx&apiKey=f7d83460fc5c4ed59faa6f302eb45a2a');
         setNews(response.data.articles);
+        console.log(news);
     }
 
     const getNews = async () =>{
-        const response = await axios.get('http://api.mediastack.com/v1/news?access_key=3dad9be18b5a2a8e92f122282c51f188');
+        const response = await axios.get('http://api.mediastack.com/v1/news?access_key=3dad9be18b5a2a8e92f122282c51f188&languages=en,es');
         setNews(response.data.data);
+        console.log(news);
     }
 
     const renderNews = () =>{
@@ -73,7 +71,6 @@ const News = () =>{
         </NewsContainer>
     );
 }
-
 //3dad9be18b5a2a8e92f122282c51f188
 
 export default News;
