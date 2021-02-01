@@ -41,7 +41,6 @@ const App = () =>{
     return (
         <Container>
             <GlobalStyle />
-            <Navigation />
             <Navigation2 />
             <Banner />
             <Infobar />
