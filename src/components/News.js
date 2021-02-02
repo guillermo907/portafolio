@@ -39,7 +39,7 @@ const News = () =>{
     }
 
     const getNews = async () =>{
-        const response = await axios.get('http://api.mediastack.com/v1/news?access_key=3dad9be18b5a2a8e92f122282c51f188&languages=en,es');
+        const response = await axios.get('https://api.mediastack.com/v1/news?access_key=3dad9be18b5a2a8e92f122282c51f188&languages=en,es');
         setNews(response.data.data);
         console.log(news);
     }
