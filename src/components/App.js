@@ -1,12 +1,10 @@
 import React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import Banner from './Banner';
-import Navigation from './Navigation';
 import Infobar from './Infobar';
 import Proyectos from './Proyectos';
 import Contacto from './Contacto';
 import Footer from './Footer';
-import News from './News';
 import Navigation2 from './Navigation2';
 
 const GlobalStyle = createGlobalStyle`
@@ -25,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     --blue-color2: #4579e2;
     --blue-dark-color: rgba(34, 50, 87, 0.976);
     --white-trans-color: rgba(255, 255, 255, 0.743); 
+
   }
 `;
 const Container = styled.div`
@@ -46,7 +45,6 @@ const App = () =>{
             <Infobar />
             <Contacto />
             <Proyectos />
-            <News />
             <Footer />
         </Container>
     );

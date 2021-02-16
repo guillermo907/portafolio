@@ -1,13 +1,10 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import thumbUp from '../thumbUp.png';
-import thumbUp2 from '../thumbUp2.png'; 
-import timely from '../timely.png';
+import responsiveImg from '../responsive.png';
 
 const InfobarContainer = styled.div`
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -34,6 +31,9 @@ const InfobarContainer = styled.div`
 
         div{
             max-width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         img{
             filter: invert(70%);
@@ -48,21 +48,13 @@ const Infobar = () => {
     return (
         <InfobarContainer id="infobar">
             <div className="infoRow">
-                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.9 }}>
-                    <img style={{width: '90%'}} src={timely}/>
-                    <h3>Agil </h3>
-                    <p>Desarrollo agil y confiable</p>
+                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.97 }}>
+                    <img style={{width: '200%'}} src={responsiveImg}/>
                 </motion.div>
-                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.9 }}>
-                    <img style={{width: '100%'}} src={thumbUp}/>
-                    <h3>Reponsivo</h3>
-                    <p>Adaptable a cualquier tipo <br/> de dispositivo</p>
-                </motion.div>
-                <motion.div whileHover={{y: 20, scale: 1.02}} whileTap={{ scale: 0.9 }}>
-                    <img style={{width: '100%'}} src={thumbUp2}/>
-                    <h3>Dinamico</h3>
-                    <p>Diseños dinamicos</p>
-                </motion.div>
+            </div>
+            <div className="Frase">
+                <h2>Tu negocio necesita destacarse y una forma efectiva de hacerlo es teniendo una prescencia en la web</h2>
+                <h2>Nosotros podemos ayudarte a hacerlo realidad sea cual sea tu necesidad</h2>
             </div>
         </InfobarContainer>
     );
